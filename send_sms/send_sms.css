@@ -1,0 +1,86 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+    font-family: 'Poppins', sans-serif;
+    
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    overflow: hidden;
+}
+
+.container {
+    width: 80%;
+    height: 100vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+ 
+    margin: auto;
+}
+
+#form_sms {
+    text-align: center;
+}
+
+h2 {
+    font-size: 20px;
+    color: white;
+}
+
+#subtitle {
+    margin-top: 30px;
+}
+
+label {
+    color: white;
+
+    font-size: 14px;
+}
+
+.form_input {
+    font-family: 'Poppins', sans-serif;
+    padding-left: 10px;   
+
+    border-radius: 15px;
+    border: none;
+}
+
+#phone_number {
+    width: 100%;
+}
+
+#msg {
+    width: 100%;
+}
+
+.hints {
+    color: white;
+    text-align: justify;
+    font-size: 12px;
+    opacity: 0.5;
+}
+
+#btn_submit_sms {
+    margin-top: 30px;
+    width: 125px;
+    height: 25px;
+
+    font-weight: 700;
+    font-size: 16px;
+
+    border-radius: 15px;
+    border: none;
+
+    background-color: seagreen;
+    color: white;
+}
