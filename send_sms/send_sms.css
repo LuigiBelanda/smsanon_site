@@ -1,13 +1,13 @@
 * {
     padding: 0;
     margin: 0;
+
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
     width: 100vw;
     height: 100vh;
-
-    font-family: 'Poppins', sans-serif;
     
     background: #0f0c29;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
@@ -88,4 +88,11 @@ label {
 
     background-color: seagreen;
     color: white;
+}
+
+/* =================== MEDIA =================== */
+@media (min-width: 360px), (min-height: 640px) {
+    .hints {
+        margin-left: 15px;
+    }
 }

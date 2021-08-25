@@ -24,13 +24,15 @@
         <form action="process_sms.php" method="post" id="form_sms">
             <h2>NÚMERO DE TELEFONE</h2>
             <label for="phone_number">Número que vai receber o SMS</label>
+            <br>
             <input type="text" name="phone_number" class="form_input" placeholder="Ex: +XX XX XXXXX-XXXX">
             <p class="hints">* Ex: +55 16 99999-9999</p>
 
 
             <h2 id="subtitle">MENSAGEM</h2>
             <label for="msg">Mensagem que você quer enviar</label>
-            <input type="text" name="msg" class="form_input">
+            <br>
+            <input type="text" name="msg" class="form_input" placeholder="Ex: Oiiii, tudo bem?">
             <p class="hints">* Evite mensagens longas</p>
             <p class="hints">* Evite acentos</p>
 

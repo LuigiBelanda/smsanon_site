@@ -34,13 +34,6 @@
         echo "<br>";
         */
     
-        if ($result === "false") {
-            echo $result." Teste";
-        }
-        else {
-            echo $result." Teste2";
-        }
-    
         curl_close($ch);
     
         
