@@ -22,11 +22,11 @@
     curl_close($ch);
 
     if ($result === "false") {
-        header('Location: send_sms.php');
+        echo"<script language='javascript' type='text/javascript'> alert('Não foi possível enviar o SMS');window.location.href='send_sms.php';</script>";
         return;
     }
     else {
-        header('Location: send_sms.php');
+        echo"<script language='javascript' type='text/javascript'> alert('SMS enviado');window.location.href='send_sms.php';</script>";
         return;
     }
 ?>
