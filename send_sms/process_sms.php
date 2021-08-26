@@ -29,20 +29,31 @@
         */
     
         $result = substr($response, 11, 5);
+        $result_quotaRemaining = substr($response, 26, 45);
+        $result_number = substr($response, 26, 93);
         /*
         echo $result;
         echo "<br>";
         */
     
-        curl_close($ch);
+        /*
+        echo"<script language='javascript' type='text/javascript'> console.log('$response');</script>";
+        echo"<script language='javascript' type='text/javascript'> console.log('$result_quotaRemaining');</script>";
+        echo"<script language='javascript' type='text/javascript'> console.log('$result_number');</script>";
+        */
     
-        
+        curl_close($ch);
+
         if ($result === "false") {
-            echo"<script language='javascript' type='text/javascript'> alert('Não foi possível enviar o SMS');window.location.href='send_sms.php';</script>";
-            return;
+            if ($result_number === "Your phone number was not provided in E.164 format, or free SMS are disabled for this country") {
+                echo"<script language='javascript' type='text/javascript'> alert('Número de telefone inválido ou o serviço não está funcionando no seu país!');window.location.href='send_sms.php';</script>";
+            } 
+            if ($result_quotaRemaining === "Only one test text message is allowed per day") {
+                echo"<script language='javascript' type='text/javascript'> alert('Você pode enviar apenas 1 SMS por dia, provavelmente você já mandou um SMS hoje, por isso seu SMS não foi enviado!');window.location.href='send_sms.php';</script>";
+            }
         }
         else {
-            echo"<script language='javascript' type='text/javascript'> alert('SMS enviado');window.location.href='send_sms.php';</script>";
+            echo"<script language='javascript' type='text/javascript'> alert('SMS enviado!');window.location.href='send_sms.php';</script>";
             return;
         }   
     }
