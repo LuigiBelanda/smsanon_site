@@ -11,7 +11,7 @@ O projeto é apenas um site onde qualquer usuário pode enviar 1 (um) SMS anôni
 
 Não é necessário instalar nada pois se trata de um projeto web, então para usá-lo basta você acesssar o seguinte site: http://smsanon.rf.gd/
 
-Após acessar o site não é nada complexo, em poucas etapas você já está conseguindo muito provavelmente conseguindo enviar o SMS que quiser.
+Após acessar o site não é nada complexo, em poucas etapas você já está conseguindo muito provavelmente enviar o SMS que quiser.
 
 -------------
 
